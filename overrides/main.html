@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            <nav class="md-nav md-nav--primary" aria-label="{{ lang.t('navigation') }}" data-md-level="0">
+                <label class="md-nav__title" for="__drawer">
+                    <a href="{{ config.extra.homepage | d(nav[0].url, true) }}" title="{{ config.site_name }}"
+                        class="md-nav__button md-logo" data-md-component="logo" data-md-state="scroll">
+                        {% include "partials/logo.html" %}
+                    </a>
+                    {{ config.site_name }}
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                    {% for nav_item in nav %}
+                    {% include "partials/nav-item.html" %}
+                    {% endfor %}
+
+                    <!-- Table of Contents in the primary sidebar -->
+                    {% if page.toc %}
+                    <li class="md-nav__item">
+                        <nav class="md-nav" data-md-component="toc" data-md-level="1">
+                            <label class="md-nav__title" for="__toc">
+                                <span class="md-nav__icon md-icon"></span>
+                                {{ config.theme.toc.title or "Table of contents" }}
+                            </label>
+                            <ul class="md-nav__list" data-md-scrollfix>
+                                {% for toc_item in page.toc %}
+                                <li class="md-nav__item">
+                                    <a href="{{ toc_item.url }}" class="md-nav__link">
+                                        {{ toc_item.title }}
+                                    </a>
+                                    {% if toc_item.children %}
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        {% for toc_item_child in toc_item.children %}
+                                        <li class="md-nav__item">
+                                            <a href="{{ toc_item_child.url }}" class="md-nav__link">
+                                                {{ toc_item_child.title }}
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </nav>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}

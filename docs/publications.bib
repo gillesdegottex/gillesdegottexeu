@@ -1,0 +1,707 @@
+@inproceedings{DegottexG2018percivaltts,
+    author = {G. Degottex and Mark Gales},
+    booktitle = {Proc. Workshop on Spoken Language Technology (SLT)},
+    title = {A Spectrally Weighted Mixture of Least Square Error and Wasserstein Discriminator Loss for Generative SPSS},
+    address = {Athens, Greece},
+    month = {December},
+    year = {2018},
+    abstract = {Generative networks can create an artificial spectrum based on its conditional distribution estimate instead of predicting only the mean value, as the Least Square (LS) solution does. This is promising since the LS predictor is known to oversmooth features leading to muffling effects. However, modeling a whole distribution instead of a single mean value requires more data and thus also more computational resources. With only one hour of recording, as often used with LS approaches, the resulting spectrum is noisy and sounds full of artifacts. In this paper, we suggest a new loss function, by mixing the LS error and the loss of a discriminator trained with Wasserstein GAN, while weighting this mixture differently through the frequency domain. Using listening tests, we show that, using this mixed loss, the generated spectrum is smooth enough to obtain a decent perceived quality. While making our source code available online, we also hope to make generative networks more accessible with lower the necessary resources.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2018percivaltts.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2018percivaltts.pdf}
+}
+
+@inproceedings{WanMoquan2018wavbasedskrrepres,
+    author = {M. Wan and G. Degottex and Mark Gales},
+    booktitle = {in Proc. Interspeech},
+    title = {Waveform-Based Speaker Representations for Speech Synthesis},
+    address = {Hyderabad},
+    month = {September},
+    year = {2018},
+    abstract = {Speaker adaptation is a key aspect of building a range of speech processing  systems,  for  example  personalised  speech  synthesis. For deep-learning based approaches, the model parameters are hard to interpret, making speaker adaptation more challenging.  One widely used method to address this problem is to extract  a  fixed  length  vector  as  speaker  representation,  and  use this as an additional input to the task-specific model.  This allows speaker-specific output to be generated, without modifying the model parameters. However, the speaker representation is often extracted in a task-independent fashion. This allows the same approach to be used for a range of tasks, but the extracted representation is unlikely to be optimal for the specific task of interest. Furthermore, the features from which the speaker representation is extracted are usually pre-defined, often a standard speech representation. This may limit the available information that can be used. In this paper, an integrated optimisation framework for building a task specific speaker representation, making use of all the available information, is proposed.  Speech synthesis is used as the example task.  The speaker representation is derived from raw waveform, incorporating text information via an attention mechanism. This paper evaluates and compares this framework with standard task-independent forms.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/WanMoquan2018wavbasedskrrepres.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/WanMoquan2018wavbasedskrrepres.pdf}
+}
+
+@inproceedings{WanMoquan2017adapt,
+    author = {M. Wan and G. Degottex and Mark Gales},
+    booktitle = {in Proc. IEEE Workshop on Automatic Speech Recognition and Understanding (ASRU)},
+    title = {Integrated speaker-adaptive speech synthesis},
+    address = {Okinawa, Japan},
+    month = {December},
+    year = {2017},
+    abstract = {Enabling speech synthesis systems to rapidly adapt to sound like a particular speaker is an essential attribute for building personalised systems. For deep-learning based approaches, this is difficult as these networks use a highly distributed representation. It is not simple to interpret the model parameters, which complicates the adaptation process. To address this problem, speaker characteristics can be encapsulated in fixed length speaker-specific Identity Vectors (iVectors), which are appended to the input of the synthesis network. Altering the iVector changes the nature of the synthesised speech. The challenge is to derive an optimal iVector for each speaker that encodes all the speaker attributes required for the synthesis system. The standard approach involves two separate stages: estimation of the iVectors for the training data; and training the synthesis network. This paper proposes an integrated training scheme for speaker adaptive speech synthesis. For the iVector extraction, an attention based mechanism, which is a function of the context labels, is used to combine the data from the target speaker. This attention mechanism, as well as nature of the features being merged, are optimised at the same time as the synthesis network parameters. This should yield an iVector-like speaker representation that is optimal for use with the synthesis system. The system is evaluated on the Voice Bank corpus. The resulting system automatically provides a sensible attention sequence and shows improved performance from the standard approach.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/WanMoquan2017adapt.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/WanMoquan2017adapt.pdf}
+}
+
+@article{DegottexG2017pmlj,
+    author={G. Degottex and P. Lanchantin and M. Gales},
+    journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+    title={A Log Domain Pulse Model for Parametric Speech Synthesis},
+    year={2018},
+    volume={26},
+    number={1},
+    pages={57-70},
+    abstract={Most of the degradation in current Statistical Parametric Speech Synthesis (SPSS) results from the form of the vocoder. One of the main causes of degradation is the reconstruction of the noise. In this article, a new signal model is proposed that leads to a simple synthesizer, without the need for ad-hoc tuning of model parameters. The model is not based on the traditional additive linear source-filter model, it adopts a combination of speech components that are additive in the log domain. Also, the same representation for voiced and unvoiced segments is used, rather than relying on binary voicing decisions. This avoids voicing error discontinuities that can occur in many current vocoders. A simple binary mask is used to denote the presence of noise in the time-frequency domain, which is less sensitive to classification errors. Four experiments have been carried out to evaluate this new model. The first experiment examines the noise reconstruction issue. Three listening tests have also been carried out that demonstrate the advantages of this model: comparison with the STRAIGHT vocoder; the direct prediction of the binary noise mask by using a mixed output configuration; and partial improvements of creakiness using a mask correction mechanism.},
+    doi={10.1109/TASLP.2017.2761546},
+    ISSN={2329-9290},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2017pmlj_acceptedversion.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2017pmlj_acceptedversion.pdf}
+}
+
+@inproceedings{DegottexG2017bliz,
+    author = {G. Degottex and P. Lanchantin and M. Gales},
+    title = {Light Supervised Data Selection, Voice Quality Normalized Training and Log Domain Pulse Synthesis},
+    booktitle = {in Proc. Blizzard Challenge 2017 - EH1},
+    address = {Stockholm, Sweden},
+    year = {2017},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2017bliz.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2017bliz.pdf}
+}
+
+@inproceedings{DegottexG2016pml,
+    author = {G. Degottex and Pierre Lanchantin and Mark Gales},
+    booktitle = {Proc. 9th Speech Synthesis Workshop (SSW9)},
+    title = {A Pulse Model in Log-domain for a Uniform Synthesizer},
+    address = {Sunnyvale, CA, USA},
+    month = {September},
+    year = {2016},
+    abstract = {The quality of the vocoder plays a crucial role in the performance of parametric speech synthesis systems. In order to improve the vocoder quality, it is necessary to reconstruct as much of the perceived components of the speech signal as possible. In this paper, we first show that the noise component is currently not accurately modelled in the widely used STRAIGHT vocoder, thus, limiting the voice range that can be covered and also limiting the overall quality. In order to motivate a new, alternative, approach to this issue, we present a new synthesizer, which uses a uniform representation for voiced and unvoiced segments. This synthesizer has also the advantage of using a simple signal model compared to other approaches, thus offering a convenient and controlled alternative for future developments. Experiments analysing the synthesis quality of the noise component shows improved speech reconstruction using the suggested synthesizer compared to STRAIGHT. Additionally an experiment about analysis/resynthesis shows that the suggested synthesizer solves some of the issues of another uniform vocoder, Harmonic Model plus Phase Distortion (HMPD). In text-to-speech synthesis, it outperforms HMPD and exhibits a similar, or only slightly worse, quality to STRAIGHT's quality, which is encouraging for a new vocoding approach.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2016pml.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2016pml.pdf}
+}
+
+@inbook{DegottexG2016hsdi,
+    author={Gilles Degottex and Erkki Bianco and Xavier Rodet},
+    title={Normal and Abnormal Vocal Folds Kinematics: High Speed Digital Phonoscopy (HSDP), Optical Coherence Tomography (OCT) & Narrow Band Imaging (NBI(r)), Volume II: Applications},
+    chapter={Phonation Gestures Studied with HSDI and their glottal air-flow and EGG Correlates},
+    publisher={Pacific Voice & Speech Foundation},
+    year={2016}
+}
+
+@article{DegottexG2016mfasingsj,
+    author={G. Degottex and L. Ardaillon and A. Roebel},
+    journal={IEEE Transactions on Audio, Speech, and Language Processing},
+    title={Multi-Frame Amplitude Envelope Estimation for Modification of Singing Voice},
+    year={Accepted 2016},
+    abstract={Singing voice synthesis benefits from very high quality estimation of the resonances and anti-resonances of the Vocal Tract Filter (VTF), i.e. an amplitude spectral envelope. In the state of the art, a single frame of DFT transform is commonly used as a basis for building spectral envelopes. Even though Multiple Frame Analysis (MFA) has already been suggested for envelope estimation, it is not yet used in concrete applications. Indeed, even though existing attempts have shown very interesting results, we will demonstrate that they are either over complicated or fail to satisfy the high accuracy that is necessary for singing voice. In order to allow future applications of MFA, this article aims to improve the theoretical understanding and advantages of MFA-based methods. The use of singing voice signals is very beneficial for studying MFA methods due to the fact that the VTF configuration can be relatively stable and, at the same time, the vibrato creates a regular variation that is easy to model. By simplifying and extending previous works, we also suggest and describe two MFA-based methods. To better understand the behaviors of the envelope estimates, we designed numerical measurements to assess SFA and MFA methods using synthetic signals. With listening tests, we also designed two proofs of concept using pitch scaling and conversion of timbre. Both evaluations show clear and positive results for MFA-based methods, thus, encouraging this research direction for future applications.},
+    doi={10.1109/TASLP.2016.2551863},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2016mfasingsj_acceptedversion.pdf}
+}
+
+@inproceedings{DegottexG2016mfasings,
+    author = {G. Degottex and L. Ardaillon and A. Roebel},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    title = {Simple Multi Frame Analysis methods for estimation of Amplitude Spectral Envelope estimation in Singing Voice},
+    address = {Shanghai, China},
+    month = {March},
+    year = {2016},
+    abstract = {In the state of the art, a single frame of DFT transform is commonly used as a basis for building amplitude spectral envelopes. Multiple Frame Analysis (MFA) has already been suggested for envelope estimation, but often with excessive complexity. In this paper, two MFA-based methods are presented: one simplifying an existing Least Square (LS) solution, and another one based on a simple linear interpolation. In the context of singing voice we study sustained segments with vibrato, because these ones are obviously critical for singing voice synthesis. They also provide a convenient context to study, prior to extension of this work in more general contexts. Numerical and perceptual experiments show clear improvements of the two methods described compared to the state of the art and encourage further studies in this research direction.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2016mfasings.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2016mfasings.pdf}
+}
+
+
+@article{MorfiV2015jadft,
+    author={V. Morfi and G. Degottex and A. Mouchtaris},
+    journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+    title={Speech Analysis and Synthesis with a Computationally Efficient Adaptive Harmonic Model},
+    year={2015},
+    volume={23},
+    number={11},
+    pages={1950--1962},
+    abstract={Harmonic models have to be both precise and fast in order to represent the speech signal adequately and be able to process large amount of data in a reasonable amount of time. For these purposes, the full-band adaptive harmonic model (aHM) used by the adaptive iterative refinement (AIR) algorithm has been proposed in order to accurately model the perceived characteristics of a speech signal. Even though aHM-AIR is precise, it lacks the computational efficiency that would make its use convenient for large databases. The least squares (LS) solution used in the original aHM-AIR accounts for most of the computational load. In a previous paper, we suggested a peak picking (PP) approach as a substitution to the LS solution. In order to integrate the adaptivity scheme of aHM in the PP approach, an adaptive discrete Fourier transform (aDFT), whose frequency basis can fully follow the variations of the f0 curve, was also proposed. In this paper, we complete the previous publication by evaluating the above methods for the whole analysis process of a speech signal. Evaluations have shown an average time reduction by four times using PP and aDFT compared to the LS solution. Additionally, based on formal listening tests, when using PP and aDFT, the quality of the re-synthesis is preserved compared to the original LS-based approach.},
+    doi={10.1109/TASLP.2015.2458580},
+    ISSN={2329-9290},
+    month={Nov},
+    pdf={http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7163319}
+}
+
+
+@inproceedings{ArdaillonL2015f0model,
+    author = {L. Ardaillon and G. Degottex and A. Roebel},
+    booktitle = {Proc. Interspeech},
+    title = {A multi-layer F0 model for singing voice synthesis using a B-spline representation with intuitive controls},
+    address = {Dresden, Germany},
+    month = {September},
+    year = {2015},
+    abstract = {In singing voice, the fundamental frequency (F0) carries not only melody, but also music style, personal expressivity and other characteristics specific to voice production mechanism. The F0 modeling is therefore critical for a natural-sounding and expressive synthesis. In addition, for artistic purposes, composers also need to have control over expressive parameters of the F0 curve, which is missing in many current approaches. This paper presents a novel parametric F0 model for singing voice synthesis with intuitive control of expressive parameters. The proposed approach considers the various F0 variations of the singing voice as separate layers using B-splines to model the melodic component. This model has been implemented in a concatenative singing voice synthesis system and its perceived naturalness has been evaluated through listening tests. The validity of each layer is first evaluated independently, and the full model is then compared to real F0 curves from professional singers. The results of these tests suggest that the model is suitable to produce natural and expressive F0 contours.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/ArdaillonL2015f0model.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/ArdaillonL2015f0model.pdf}
+}
+
+
+@inproceedings{FavoryX2015svlnage,
+    author = {X. Favory and N. Obin and G. Degottex and A. Roebel},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    title = {The Role of Glottal Source Parameters for High-Quality Transformation of Perceptual Age},
+    address = {Brisbane, Australia},
+    month = {April},
+    year = {2015},
+    abstract = {The intuitive control of voice transformation (e.g., age/sex, emotions) is useful to extend the expressive repertoire of a voice. This paper explores the role of glottal source parameters for the control of voice transformation. First, the SVLN speech synthesizer (Separation of the Vocal-tract with the Liljencrants-fant model plus Noise) is used to represent the glottal source parameters (and thus, voice quality) during speech analysis and synthesis. Then, a simple statistical method is presented to control speech parameters during voice transformation: a GMM is used to model the speech parameters of a voice, and regressions are then used to adapt the GMMs statistics (mean and variance) to a control parameter (e.g., age/sex, emotions). A subjective experiment conducted on the control of perceptual age proves the importance of the glottal source parameters for the control of voice transformation, and shows the efficiency of the statistical model to control voice parameters while preserving a high-quality of the voice transformation.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/FavoryX2015svlnage.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/FavoryX2015svlnage.pdf},
+    doi = {10.1109/icassp.2015.7178901}
+}
+
+@article{DegottexG2015dlinmfa,
+    author={G. Degottex},
+    journal={Signal Processing Letters, IEEE},
+    title={A Time Regularization Technique for Discrete Spectral Envelopes Through Frequency Derivative},
+    year={2015},
+    month={July},
+    volume={22},
+    number={7},
+    pages={978-982},
+    abstract={In most applications of sinusoidal models for speech signal, an amplitude spectral envelope is necessary. This envelope is not only assumed to fit the vocal tract filter response as accurately as possible, but it should also exhibit slow varying shapes across time. Indeed, time irregularities can generate artifacts in signal manipulations or increase improperly the features variance used in statistical models. In this letter, a simple technique is suggested to improve this time regularity. Considering that time regularity is characterized by slowly varying spectral shapes among successive frames, the basic idea is to smooth the frequency derivative of the envelope instead of its absolute value. Even though, this idea could be applied to different envelope models, the present letter describes its application to the simple linear interpolation envelope. Using real speech signals, the evaluation shows that the time irregularity can be drastically reduced. Additional experiments using synthetic signals also show that the accuracy of the original envelope is not degraded by the process.},
+    keywords={interpolation;signal processing;speech synthesis;amplitude spectral envelope;discrete spectral envelopes;features variance;frequency derivative;linear interpolation envelope;slow varying shapes;speech signal;time regularization technique;vocal tract filter response;Cepstral analysis;Frequency estimation;Harmonic analysis;Hidden Markov models;Shape;Speech;Time-frequency analysis;Amplitude spectral envelope;sinusoidal model;speech modeling;time regularity},
+    doi={10.1109/LSP.2014.2380412},
+    ISSN={1070-9908},
+    pdf={http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2015dlinmfa_acceptedversion.pdf}
+}
+
+
+@article{DegottexG2014jhmpd,
+    author = {G. Degottex and D. Erro},
+    title = {A uniform phase representation for the harmonic model in speech synthesis applications},
+    journal={EURASIP, Journal on Audio, Speech, and Music Processing - Special Issue: Models of Speech - In Search of Better Representations},
+    volume = {2014},
+    number = {1},
+    pages = {38},
+    year = {2014},
+    url={http://doi.org/10.1186/s13636-014-0038-1},
+    doi={10.1186/s13636-014-0038-1},
+    abstract = {Feature-based vocoders, e.g. STRAIGHT, offer a way to manipulate the perceived characteristics of the speech signal in speech transformation and synthesis. For the harmonic model, which provide excellent perceived quality, features for the amplitude parameters already exist (e.g. LSF, MFCC). However, because of the wrapping of the phase parameters, phase features are more difficult to design. To randomize the phase of the harmonic model during synthesis, a voicing feature is commonly used, which distinguishes voiced and unvoiced segments. However, voice production allows smooth transitions between voiced/unvoiced states which makes voicing segmentation sometimes tricky to estimate. In this article, two phase features are suggested to represent the phase of the harmonic model in a uniform way, without voicing decision. The synthesis quality of the resulting vocoder has been evaluated, using subjective listening tests, in the context of resynthesis, pitch scaling and HMM-based synthesis. The experiments show that the suggested signal model is comparable to STRAIGHT or even better in some scenarios. They also reveal some limitations of the harmonic framework itself in case of high fundamental frequencies.},
+    pdf={http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2014jhmpd_acceptedversion.pdf}
+}
+
+@inproceedings{DegottexG2014pddvqclass,
+    author = {G. Degottex and N. Obin},
+    title = {Phase Distortion Statistics as a Representation of the Glottal Source: Application to the Classification of Voice Qualities},
+    booktitle = {Proc. Interspeech},
+    address = {Singapore},
+    month = {September},
+    year = {2014},
+    organization = {International Speech Communication Association (ISCA)},
+    abstract = {The representation of the glottal source is of paramount importance
+    for describing para-linguistic information carried through
+    the voice quality (e.g., emotions, mood, attitude). However,
+    some existing representations of the glottal source are based
+    on analytical glottal models, which assume strong a priori constraints
+    on the shape of the glottal pulses. Thus, these representations
+    are restricted to limited number of voices. Recent
+    progresses in the estimation of the glottal models revealed that
+    the Phase Distortion (PD) of the signal carries most of the information
+    about the glottal pulses. This paper introduces a flexible
+    representation of the glottal source - based on the short-term
+    modelling of the phase distortion. This representation is not
+    constrained by a specific analytical model, and thus can be used
+    to describe a larger variety of expressive voices. We address the
+    efficiency of this representation for the recognition of various
+    voice qualities, with comparison to MFCC and standard glottal
+    source representations.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2014pddvqclass.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2014pddvqclass.pdf}
+}
+
+@inproceedings{DegottexG2014hmpdis,
+    author = {G. Degottex and D. Erro},
+    title = {A Measure of Phase Randomness for the Harmonic Model in Speech Synthesis},
+    booktitle = {Proc. Interspeech},
+    address = {Singapore},
+    month = {September},
+    year = {2014},
+    organization = {International Speech Communication Association (ISCA)},
+    abstract = {Modern statistical speech processing frameworks require the speech signals to be translated into feature vectors by means of vocoders. While features representing the amplitude envelope already exist (e.g. MFCC, LSF), parametrizing the phase information is far from straightforward, not only because it is a circular data, but also because it shows an irregular behaviour in noisy time-frequency regions. Thus, many vocoders reconstruct speech by using minimum phases and random phases, relying on a previous voicing decision. In this paper, a phase feature is suggested to represent the randomness of the phase across the full time-frequency plan, in both voiced and unvoiced segments, without voicing decision. Resynthesis experiments show that, when integrated into a full-band harmonic vocoder, the suggested randomization feature is slightly better, on average, to STRAIGHT's aperiodicity. In HMM-based synthesis, the results show that the suggested vocoder reduces the complexity of the analysis and statistical modelling by removing the voicing decision, while keeping the perceived quality.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2014hmpdis.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2014hmpdis.pdf}
+}
+
+@inproceedings{KoutsogiannakiM2014pddvpath,
+    author = {M. Koutsogiannaki and O. Simantiraki and G. Degottex and Y. Stylianou},
+    title = {The Importance of Phase on Voice Quality Assessment},
+    booktitle = {Proc. Interspeech},
+    address = {Singapore},
+    month = {September},
+    year = {2014},
+    organization = {International Speech Communication Association (ISCA)},
+    abstract = {State of the art objective measures for quantifying voice quality
+    mostly consider estimation of features extracted from the magnitude
+    spectrum. Assuming that speech is obtained by exciting
+    a minimum-phase (vocal tract filter) and a maximum-phase
+    component (glottal source), the amplitude spectrum cannot capture
+    the maximum phase characteristics. Since voice quality is
+    connected to the glottal source, the extracted features should
+    be linked with the maximum-phase component of speech. This
+    work proposes a new metric based on the phase spectrum for
+    characterizing the maximum-phase component of the glottal
+    source. The proposed feature, the Phase Distortion Deviation,
+    reveals the irregularities of the glottal pulses and therefore, can
+    be used for detecting voice disorders. This is evaluated in a
+    ranking problem of speakers with spasmodic dysphonia. Results
+    show that the obtained ranking is highly correlated with
+    the subjective ranking provided by doctors in terms of overall
+    severity, tremor and jitter. The high correlation of the suggested
+    feature with different metrics reveals its ability to capture voice
+    irregularities and highlights the importance of the phase spectrum
+    in voice quality assessment.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/KoutsogiannakiM2014pddvpath.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/KoutsogiannakiM2014pddvpath.pdf}
+}
+
+@inproceedings{MorfiV2014ppadft,
+    author = {V. Morfi and G. Degottex and A. Mouchtaris},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    title = {A Computationally Efficient Refinement of the Fundamental Frequency Estimate for the Adaptive Harmonic Model},
+    address = {Florence, Italy},
+    month = {May},
+    year = {2014},
+    abstract = {The full-band Adaptive Harmonic Model (aHM) can be used by the Adaptive Iterative Refinement (AIR) algorithm to accurately model the perceived characteristics of a speech recording. However, the Least Squares (LS) solution used in the current aHM-AIR makes the $f_{0}$ refinement time consuming, limiting the use of this algorithm for large databases. In this paper, a Peak Picking (PP) approach is suggested as a substitution to the LS solution. In order to integrate the adaptivity scheme of aHM in the PP approach, an adaptive Discrete Fourier Transform (aDFT) is also suggested in this paper, whose frequency basis can fully follow the frequency variations of the $f_{0}$ curve. Evaluations have shown an average time reduction of 5.5 times compared to the LS solution approach, while the quality of the re-synthesis is preserved compared to the original aHM-AIR.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/MorfiV2014ppadft.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/MorfiV2014ppadft.pdf}
+}
+
+@inproceedings{COVAREP2014,
+    author = {G. Degottex and J. Kane and T. Drugman and T. Raitio and S. Scherer},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    title = {{COVAREP} - A collaborative voice analysis repository for speech technologies},
+    address = {Florence, Italy},
+    month = {May},
+    year = {2014},
+    abstract = {Speech processing algorithms are often developed demonstrating improvements over the state-of-the-art, but sometimes at the cost of high complexity. This makes algorithm reimplementations based on literature difficult, and thus reliable comparisons between published results and current work are hard to achieve. This paper presents a new collaborative and freely available repository for speech processing algorithms called COVAREP, which aims at fast and easy access to new speech processing algorithms and thus facilitating research in the field. We envisage that COVAREP allows more reproducible research by strengthening complex implementations through shared contributions and openly available code which can be discussed, commented on and corrected by the community. Presently COVAREP contains contributions from five distinct laboratories and we encourage contributions from across the speech processing research field. In this paper, we provide an overview of the current offerings of COVAREP and also include a demonstration of the algorithms through an emotion classification experiment.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/COVAREP2014.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/COVAREP2014.pdf}
+}
+
+@inproceedings{KafentzisGP2014pitchshiftahm,
+    author = {G. Kafentzis and G. Degottex and O. Rosec and Y. Stylianou},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    title = {Pitch Modifications of speech based on an Adaptive Harmonic Model},
+    address = {Florence, Italy},
+    month = {May},
+    year = {2014},
+    abstract = {In this paper, a simple method for pitch-scale modifications of speech based on a recently suggested model for AM-FM decomposition of speech signals, is presented. This model is referred to as the adaptive Harmonic Model (aHM). The aHM models speech as a sum of harmonically related sinusoids that can adapt to the local characteristics of the signal. It was shown that this model provides high quality reconstruction of speech and thus, it can also provide high quality pitch-scale modifications. For the latter, the amplitude envelope is estimated using the Discrete All-Pole (DAP) method, and the phase envelope estimation is performed by utilizing the concept of relative phase. Formal listening tests on a database of several languages show that the synthetic pitch-scaled waveforms are natural and free of some common artefacts encountered in other state-of-the-art models, such as HNM and STRAIGHT.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/KafentzisGP2014pitchshiftahm.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/KafentzisGP2014pitchshiftahm.pdf}
+}
+
+@inproceedings{Caetano2013simil,
+    author = {M. Caetano and G. Kafentzis and G. Degottex and A. Mouchtaris and Y. Stylianou},
+    title = {Evaluating how well Filtered White Noise models the Residual from Sinusoidal Analysis of Musical Instrument Sounds},
+    booktitle = {Proc. IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+    address = {New Platz, NY, USA},
+	month = {October},
+    abstract = {Nowadays, sinusoidal modeling commonly includes a residual obtained by the subtraction of the sinusoidal model from the original sound. This residual signal is often further modeled as filtered white noise. In this work, we evaluate how well filtered white noise models the residual from sinusoidal modeling of musical instrument sounds for several sinusoidal algorithms. We compare how well each sinusoidal model captures the oscillatory behavior of the partials by looking into how noisy their residuals are. We performed a listening test to evaluate the perceptual similarity between the original residual and the modeled counterpart. Then we further investigate whether the result of the listening test can be explained by the fine structure of the residual magnitude spectrum. The results presented here have the potential to subsidize improvements on residual modeling.},
+    year = {2013}
+}
+
+@inproceedings{KafentzisGP2013timescaleahm,
+    author = {G. Kafentzis and G. Degottex and O. Rosec and Y. Stylianou},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    title = {Time-Scale Modifications Based on a Full-Band Adaptive Harmonic Model},
+    address = {Vancouver, Canada},
+    month = {August},
+    year = {2013},
+    abstract = {In this paper, a simple method for time-scale modifications of speech based on a recently suggested model for AM-FM decomposition of speech signals, is presented. This model is referred to as the adaptive Harmonic Model (aHM). A full-band speech analysis/synthesis system based on the aHM representation is built, without the necessity of seperating a deterministic and/or a stochastic component from the speech signal. The aHM models speech as a sum of harmonically related sinusoids that can adapt to the local characteristics of the signal and provide accurate instantaneous amplitude, frequency, and phase trajectories. Because of the high quality representation and reconstruction of speech, aHM can provide high quality time-scale modifications. Informal listenings show that the synthetic time-scaled waveforms are natural and free of some common artifacts encountered in other state-of-the-art models, such as "metallic quality", chorusing, or musical noise.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/KafentzisGP2013timescaleahm.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/KafentzisGP2013timescaleahm.pdf}
+}
+
+@article{DegottexG2013jahmair,
+    author = {G. Degottex and Y. Stylianou},
+    title = {Analysis and Synthesis of Speech using an Adaptive Full-band Harmonic Model},
+    journal={IEEE Transactions on Acoustics, Speech and Language Processing},
+	abstract = {Voice models often use frequency limits to split the speech spectrum into two or more voiced/unvoiced frequency bands. However, from the voice production, the amplitude spectrum of the voiced source decreases smoothly without any abrupt frequency limit. Accordingly, multiband models struggle to estimate these limits and, as a consequence, artifacts can degrade the perceived quality. Using a linear frequency basis adapted to the non-stationarities of the speech signal, the Fan Chirp Transformation (FChT) have demonstrated harmonicity at frequencies higher than usually observed from the DFT which motivates a full-band modeling. The previously proposed Adaptive Quasi-Harmonic model (aQHM) offers even more flexibility than the FChT by using a non-linear frequency basis. In the current paper, exploiting the properties of aQHM, we describe a full-band Adaptive Harmonic Model (aHM) along with detailed descriptions of its corresponding algorithms for the estimation of harmonics up to the Nyquist frequency. Formal listening tests show that the speech reconstructed using aHM is nearly indistinguishable from the original speech. Experiments with synthetic signals also show that the proposed aHM globally outperforms previous sinusoidal and harmonic models in terms of precision in estimating the sinusoidal parameters. As a perspective, such a precision is interesting for building higher level models upon the sinusoidal parameters, like spectral envelopes for speech synthesis.},
+	issn = {1558-7916},
+	number = {10},
+	pages = {2085--2095},
+	volume = {21},
+    year = {2013},
+    url={http://doi.org/10.1109/TASL.2013.2266772},
+    doi={10.1109/TASL.2013.2266772},
+    pdf={http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2013jahmair_acceptedversion.pdf}
+}
+
+@article{DegottexG2013svln,
+    author={G. Degottex and P. Lanchantin and A. Roebel and X. Rodet},
+    title={Mixed source model and its adapted vocal tract filter estimate for voice transformation and synthesis},
+    journal={Speech Communication},
+    publisher = {Elsevier},
+    volume = {55},
+    number = {2},
+    pages = {278-294},
+    year={2013},
+    abstract = {In current methods for voice transformation and speech synthesis, the vocal-tract filter is usually assumed to be excited by a flat amplitude spectrum. In this article, we present a method using a mixed source model defined as a mixture of the Liljencrants-Fant (LF) model and Gaussian noise. Using the LF model, the base approach used in this presented work is therefore close to a vocoder using exogenous input like ARX-based methods or the Glottal Spectral Separation (GSS) method. Such approaches are therefore dedicated to voice processing promising an improved naturalness compared to generic signal models. Also, using spectral division like in GSS, we show that a glottal source model can be used in a more flexible way than in ARX approach. A vocal-tract filter estimate is therefore derived to take into account the amplitude spectra of both deterministic and random components of the glottal source. The proposed mixed source model is controlled by a small set of intuitive and independent parameters. The relevance of this voice production model is evaluated, through listening tests, in the context of resynthesis, HMM-based speech synthesis, breathiness modification and pitch transposition.},
+    url={http://doi.org/10.1016/j.specom.2012.08.010},
+    doi={10.1016/j.specom.2012.08.010},
+    issn = {0167-6393},
+    pdf={http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2013svln_preprintR2_acceptedversion.pdf}
+}
+
+@inproceedings{HuberS2012mspd2ix,
+    author = {S. Huber and A. Roebel and G. Degottex},
+    title = {Glottal source shape parameter estimation using phase minimization variants},
+    booktitle = {Proc. Interspeech},
+    address = {Portland, USA},
+    month = {September},
+    year = {2012},
+	organization = {International Speech Communication Association (ISCA)},
+    abstract = {The voice quality of speech production is related to the vibrating modes of the vocal folds. The LF model provides an analytic description of the deterministic component of the glottal source. An parameterisation of this model is approximated by the shape parameter Rd, which mainly describes the transition in voice quality from tense to breathy voices. In this paper we first extent its defined range in order to be able to better describe breathy voice qualities. Then we propose a new method to estimate the Rd parameter. By evaluating a combination of error surfaces of different Rd parameter estimation methods and by objective measurement tests we verify the improvement by utilizing this new method compared to the state of the art baseline approach.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/HuberS2012mspd2ix.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/HuberS2012mspd2ix.pdf}
+}
+
+@inproceedings{DegottexG2012ahm,
+    author = {G. Degottex and Y. Stylianou},
+    title = {A Full-Band Adaptive Harmonic Representation of Speech},
+    booktitle = {Proc. Interspeech},
+    address = {Portland, USA},
+    month = {September},
+    year = {2012},
+    organization = {International Speech Communication Association (ISCA)},
+    abstract = {In this paper we present a full-band Adaptive Harmonic Model (aHM) that is able to accurately reconstruct stationary and non stationary parts of speech. The model does not require any voiced/unvoiced decision, neither an accurate estimation of the pitch contour. Its robustness is based on the previously suggested adaptive Quasi-Harmonic model (aQHM), which provides a mechanism for frequency correction and adaptivity of its basis functions to the characteristics of the input signal. The suggested method overcomes limitations of the initial method based on aQHM in detecting frequency tracks over time, especially at mid and high frequencies, by employing a bandlimited iterative procedure for the re-estimation of the fundamental frequency. Listening tests show that reconstructed speech using aHM is mainly indistinguishable from the original signal, outperforming standard sinusoidal models (SM) and the aQHM-based method, while it uses less parameters for the reconstruction than SM.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2012ahm.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2012ahm.pdf}
+}
+
+@inproceedings{Degottex2012tenspd,
+    title = {Identifying Tenseness of Lombard Speech Using Phase Distortion},
+    booktitle = {Proc. The Listening Talker: An interdisciplinary workshop on natural and synthetic modification of speech in response to listening conditions},
+    author = {G. Degottex and E. Godoy and Y. Stylianou},
+    address = {Edinburgh, UK},
+    pages = {60},
+    month = {May},
+    year = {2012},
+    abstract = {The "Lombard effect" describes speakers' tendency to increase their vocal effort when communicating in noise. Most often, the Lombard effect is examined in terms of acoustic parameters such as pitch, duration, and spectral amplitude (e.g., tilt/slope, formants). However, these parameters offer limited insight into voice quality, such as "tenseness" associated with increased vocal effort. Acoustically, one of the most significant indicators of tenseness relates to features of the glottal excitation signal: specifically, perceived tenseness of a voice is linked to a decrease in the glottal spectral tilt  (i.e., slope). Unlike typical analyses of the Lombard effect, Drugman at al. explicitly examines glottal source parameters. Unfortunately, glottal source estimation is a challenging and delicate problem. Consequently, the present work seeks to offer an alternative analysis framework that can also isolate contributions of the excitation source (from the vocal tract), but without explicit glottal source modelling. In particular, phase distortion (defined below) is used to highlight differences in voice quality, focusing specifically on the relative tenseness of Lombard speech compared to Normal speech. [...]},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2012tenspd.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2012tenspd.pdf}
+}
+
+@inproceedings{TahonM2012a,
+    title = {Usual voice quality features and glottal features for emotional valence detection},
+    booktitle = {Proc. International Conference on Speech Prosody},
+    author = {M. Tahon and G. Degottex and L. Devillers},
+    address = {Shanghai, China},
+    month = {May},
+    year = {2012},
+    abstract = {We focus in this paper on the detection of emotions collected in real-life context. In order to improve our emotional valence detection system, we have tested new voice quality features that are mainly used for speech synthesis or voice transformation: the relaxation coefficient (Rd) and the functions of phase distortion (FPD); but also usual voice quality features. Distributions of voice quality features across speakers, gender, age and emotions are shown over the IDV-HR ecological corpus. Our results conclude that glottal and usual voice quality features are of interest for emotional valence detection even facing diverse kind of voices in ecological situations.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/TahonM2012a.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/TahonM2012a.pdf}
+}
+
+@inproceedings{RoebelA2012a,
+    title = {Analysis and modification of excitation source characteristics for singing voice synthesis},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    author = {A. Roebel and S. Huber and X. Rodet and G. Degottex},
+    address = {Kyoto, Japan},
+    month = {March},
+    year = {2012},
+    abstract = {The present article investigates into the use of the LF glottal pulse model for singing synthesis and transformation. A recent estimator of the LF-glottal pulse shape parameter (rd) is used to analyze a small collection of professional singing examples and the results are discussed in the context of recent findings relating the rd shape parameter to other speech signal parameters (intensity and vibrato). We propose a rd shape parameter model for vibrato rendering and present an algorithm that allows modifying the glottal pulse shape parameter of a given speech signal and is used to enhance the vibrato generation in a speech to singing transformation system.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/RoebelA2012a.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/RoebelA2012a.pdf}
+}
+
+@inproceedings{LanchantinP2011b,
+    title = {Vivos Voco: A survey of recent research on voice transformations at Ircam},
+    booktitle = {Proc. Digital Audio Effects (DAFx)},
+    author = {P. Lanchantin and S. Farner and C. Veaux and G. Degottex and N. Obin and G. Beller and F. Villavicencio and S. Huber and G. Peeters and A. Roebel and X. Rodet},
+    address = {Paris, France},
+    pages = {277-285},
+    month = {September},
+    year = {2011},
+    abstract = {IRCAM has a long experience in analysis, synthesis and transformation of voice. Natural voice transformations are of great interest for many applications and can be combine with text-to-speech system, leading to a powerful creation tool. We present research conducted at IRCAM on voice transformations for the last few years. Transformations can be achieved in a global way by modifying pitch, spectral envelope, durations etc. While it sacrifices the possibility to attain a specific target voice, the approach allows the production of new voices of a high degree of naturalness with different gender and age, modified vocal quality, or another speech style. These transformations can be applied in realtime using ircamTools TR A X.Transformation can also be done in a more specific way in order to transform a voice towards the voice of a target speaker. Finally, we present some recent research on the transformation of expressivity.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/LanchantinP2011b.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/LanchantinP2011b.pdf}
+}
+
+@inproceedings{HezardT2011,
+    title = {Glottal area waveform study from high speed video-endoscopic recordings and voice production model with aeroacoustic coupling driven by a forced glottal folds model},
+    booktitle = {Proc. Pan-European Voice Conferences (PEVOC)},
+    author = {T. Hezard and T. Helie and B. Doval and R. Causse and G. Degottex},
+    year = {2011},
+    month = {September},
+    address = {Marseille, France}
+}
+
+@inproceedings{LanchantinP2011,
+    author = {P. Lanchantin and S. Farner and C. Veaux and G. Degottex and A. Roebel and X. Rodet},
+    title = {A short review on voice transformations at IRCAM},
+    booktitle = {Proc. of the First International Workshop on Performative Speech and Singing Synthesis},
+    year = {2011},
+    month = {March},
+    pages = {89-98},
+    address = {Vancouver, Canada},
+    abstract = {IRCAM has a long experience in analysis, synthesis and transformation of voice. Natural voice transformations are of great interest for many applications and can be combine with text-to-speech system, leading to a powerful creation tool. We present research conducted at IRCAM on voice transformations for the last few years. Transformations can be achieved in a global way by modifying pitch, spectral envelope, durations etc. While it sacrifices the possibility to attain a specific target voice, the approach allows the production of new voices of a high degree of naturalness with different gender and age, modified vocal quality, or another speech style. These transformations can be applied in realtime using ircamTools TRAX. Transformation can also be done in a more specific way in order to transform a voice towards the voice of a target speaker. Finally, we present some recent research on the transformation of expressivity.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/LanchantinP2011.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/LanchantinP2011.pdf}
+}
+
+@article{DegottexG2011msp,
+    author={G. Degottex and A. Roebel and X. Rodet},
+    title={Phase minimization for glottal model estimation},
+    journal={IEEE Transactions on Acoustics, Speech and Language Processing},
+    publisher = {IEEE},
+    year={2011},
+    volume={19},
+    number={5},
+    pages={1080-1090},
+    month={July},
+    abstract = {In glottal source analysis, the phase minimization criterion has already been proposed to detect excitation instants. As shown in this article, this criterion can also be used to estimate the shape parameter of a glottal model (ex. Liljencrants-Fant model) and not only its time position. Additionally, we show that the shape parameter can be estimated independently of the glottal model position. The reliability of the proposed methods is evaluated with synthetic signals and compared to that of the IAIF and minimum/maximum-phase decomposition methods. The results of the methods are evaluated according to the influence of the fundamental frequency and noise. The estimation of a glottal model is useful for the separation of the glottal source and the vocal-tract filter and therefore can be applied in voice transformation, synthesis and also in clinical context or for the study of the voice production.},
+    url={http://doi.org/10.1109/TASL.2010.2076806},
+    doi={10.1109/TASL.2010.2076806},
+    pdf={http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2011msp_acceptedversion.pdf}
+}
+
+@inproceedings{Degottex2011b,
+    author={G. Degottex and A. Roebel and X. Rodet},
+    title={Pitch transposition and breathiness modification using a glottal source model and its adapted vocal-tract filter},
+    booktitle={Proc. IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+    pages={5128-5131},
+    year={2011},
+    address={Prague, Czeck Republic},
+    month={May},
+    abstract={The transformation of the voiced segments of a speech recording has many applications such as expressivity synthesis or voice conversion. This paper addresses the pitch transposition and the modification of breathiness by means of an analytic description of the deterministic component of the voice source, a glottal model. Whereas this model is dedicated to voice production, most of the current methods can be applied to any pseudo-periodic signals. Using the described method, the synthesized voice is thus expected to better preserve some naturalness compared to a more generic method. Using preference tests, it is shown that this method is preferred for important pitch transposition (e.g. one octave) compared to two state of the art methods. Additionally, it is shown that the breathiness of two male utterances can be controlled.},
+    doi={10.1109/ICASSP.2011.5947511 },
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2011b.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2011b.pdf}
+}
+
+@inproceedings{Degottex2011a,
+    author={G. Degottex and A. Roebel and X. Rodet},
+    title={Function of phase-distortion for glottal model estimation},
+    booktitle={Proc. IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+    pages={4608-4611},
+    year={2011},
+    address={Prague, Czeck Republic},
+    month={May},
+    keywords={Voice analysis , glottal model , glottal source , phase minimization , shape parameter},
+    abstract={In voice analysis, the parameters estimation of a glottal model, an analytic description of the deterministic component of the glottal source, is a challenging question to assess voice quality in clinical use or to model voice production for speech transformation and synthesis using a priori constraints. In this paper, we first describe the Function of Phase-Distortion (FPD) which allows to characterize the shape of the periodic pulses of the glottal source independently of other features of the glottal source. Then, using the FPD, we describe two methods to estimate a shape parameter of the Liljencrants-Fant glottal model. By comparison with state of the art methods using Electro-Glotto-Graphic signals, we show that the one of these method outperform the compared methods.},
+    doi={10.1109/ICASSP.2011.5947381},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2011a.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2011a.pdf}
+}
+
+
+@phdthesis{Degottex2010,
+    author = {G. Degottex},
+    title = {Glottal source and vocal tract separation},
+    school = {UPMC-Ircam-UMR9912-STMS, Paris, France},
+    address = {Paris, France},
+    year = 2010,
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2010_PhD_v4_Final.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2010_PhD_v4_Final.pdf},
+    abstract = {This study addresses the problem of inverting a voice production model to retrieve, for a given recording, a representation of the sound source which is generated at the glottis level, the glottal source, and a representation of the resonances and anti-resonances of the vocal-tract.
+    This separation gives the possibility to manipulate independently the elements composing the voice.
+    There are many applications of this subject like the ones presented in this study, namely voice transformation and speech synthesis, as well as many others such as identity conversion, expressivity synthesis, voice restoration which can be used in entertainment technologies, artistic sound installations, movies and music industry, toys and video games, telecommunication, etc.
+
+    In this study, we assume that the perceived elements of the voice can be manipulated using the well known source-filter model. In the spectral domain, voice production is thus described as a multiplication of the spectra of its elements, the glottal source, the vocal-tract filter and the radiation.
+    The second assumption used in this study concerns the deterministic component of the glottal source. Indeed, we assume that a glottal model can fit one period of the glottal source. Using such an analytical description, the amplitude and phase spectra of the deterministic source are linked through the shape parameter of the glottal model. Regarding the state of the art of voice transformation and speech synthesis methods, the naturalness and the control of the transformed and synthesized voices should be improved.
+    Accordingly, we try to answer the three following questions: 1) How to estimate the parameter of a glottal model? 2) How to estimate the vocal-tract filter according to this glottal model? 3) How to transform and synthesize a voiced signal using this glottal model?
+
+    Special attention is given to the first question. We first assume that the glottal source and the impulse response of the vocal-tract filter are mixed-phase and minimum-phase signals respectively.
+    Then, based on these properties, various methods are proposed which minimize the mean squared phase of the convolutive residual of an observed spectrum and its model.
+    A last method is described where a unique shape parameter is in a quasi closed-form expression of the observed spectrum.
+    Additionally, this study discusses the conditions a glottal model and its parametrization have to satisfy in order to ensure that the parameters estimation is reliable using the proposed methods.
+    These methods are also evaluated and compared to state of the art methods using synthetic and electroglottographic signals.
+    Using one of the proposed methods, the estimation of the shape parameter is independent of the position and the amplitude of the glottal model.
+    Moreover, it is shown that this same method outperforms all the compared methods.
+
+    To answer the second and third questions addressed in this study, we propose an analysis/synthesis procedure which estimates the vocal-tract filter according to an observed spectrum and its estimated source.
+    Preference tests have been carried out and their results are presented in this study to compare the proposed procedure to existing ones.
+    In terms of pitch transposition, it is shown that the overall quality of the voiced segments of a recording can be improved for important transposition factors. It is also shown that the breathiness of a voice can be controlled.
+    }
+}
+
+@inproceedings{Lanchantin2010,
+    author = {P. Lanchantin and G. Degottex and X. Rodet},
+    title = {A {HMM}-based speech synthesis system using a new glottal source and vocal-tract separation method},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+    address = {Dallas, USA},
+    pages = {4630-4633},
+    year = {2010},
+    abstract = {This paper introduces a HMM-based speech synthesis system which uses a new method for the Separation of Vocal-tract and Liljencrants-Fant model plus Noise (SVLN). The glottal source is separated into two components: a deterministic glottal waveform Liljencrants-Fant model and a modulated Gaussian noise. This glottal source is first estimated and then used in the vocal-tract estimation procedure. Then, the parameters of the source and the vocal-tract are included into HMM contextual models of phonems. SVLN is promising for voice transformation in synthesis of expressive speech since it allows an independent control of vocal-tract and glottal-source properties. The synthesis results are finally discussed and subjectively evaluated.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Lanchantin2010.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Lanchantin2010.pdf}
+}
+
+@inproceedings{Degottex2010a,
+    author = {G. Degottex and A. Roebel and X. Rodet},
+    title = {Joint estimate of shape and time-synchronization of a glottal source model by phase flatness},
+    booktitle = {Proc. IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+    address = {Dallas, USA},
+    pages = {5058-5061},
+    year = {2010},
+    abstract = {A new method is proposed to jointly estimate the shape parameter of a glottal model and its time position in a voiced segment. We show that, the idea of phase flatness used in the most robust Glottal Closure Instant detection methods can be generalized to estimate the shape of the glottal model. In this paper we validate the proposed method using synthetic signals. The robustness related to fundamental frequency and noise is evaluated. The estimation of the glottal source is useful for voice analysis (ex. separation of glottal source and vocal-tract filter), voice transformation and synthesis.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2010a.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2010a.pdf}
+}
+
+@inproceedings{Degottex2009a,
+    author = {G. Degottex and A. Roebel and X. Rodet},
+    title = {Shape parameter estimate for a glottal model without time position},
+    booktitle = {13th International Conference on Speech and Computer (SPECOM)},
+    pages = {345-349},
+    year = 2009,
+    address = {St-Petersburg, Russia},
+    abstract = {From a recorded speech signal, we propose to estimate a shape parameter of a glottal model without time position estimate. Indeed, the literature usually propose to estimate the time position first. The vocal-tract filter estimate is expressed as a minimum-phase envelope estimation after removing the glottal model and a standard lips radiation model. Since this filter is mainly biased in low frequencies by the glottal model, an estimation method of a shape parameter is proposed. The evaluation of the results of such an estimator is still difficult. Therefore, this estimator is evaluated with synthetic signals. Such an estimate is useful for voice analysis (ex. Glottal Closure Instant detection), voice transformation and synthesis.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2009a.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2009a.pdf}
+}
+
+@inproceedings{Degottex2009b,
+    author = {G. Degottex and A. Roebel and X. Rodet},
+    title = {Glottal Closure Instant detection from a glottal shape estimate},
+    booktitle = {13th International Conference on Speech and Computer (SPECOM)},
+    pages = {226--231},
+    year = 2009,
+    address = {St-Petersburg, Russia},
+    abstract = {The GCI detection is a common problem in voice analysis used for voice transformation and synthesis. The proposed innovative idea is to use a glottal shape estimate and a standard lips radiation model instead of the common pre-emphasis when computing the vocal-tract filter estimate. The time-derivative glottal source is then computed from the division in frequency of the speech spectrum by the vocal-tract filter. Indeed, prominent peaks are easy to locate in the time-derivative glottal source. A whole process recovering all GCIs in a speech segment is therefore proposed taking advantage of this. The GCI estimator is finally evaluated with synthetic signals and Electro-Glotto-Graphic signals.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2009b.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2009b.pdf}
+}
+
+@inproceedings{Degottex2008a,
+    author = {G. Degottex and E. Bianco and X. Rodet},
+    title = {Usual to particular phonatory situations studied with high-speed videoendoscopy},
+    booktitle = {The 6th International Conference on Voice Physiology and Biomechanics, ICVPB},
+    pages = {19-26},
+    year = 2008,
+    address = {Tempere, Finland},
+    month = {August},
+    abstract = {Current high-speed videoendoscopy (HSV) make it possible to obtain 4000 images of the larynx per second. By this process, the analysis of the vocal folds can provide significant information. This is also possible to estimate the area of the glottis. All this information is useful for the study of the various phonatory modes, but also for glottal flow estimation which allows the improvement of our acoustic understanding of speech signals. For the usual modes then for other particular phonatory situations, we present a comparison of various speech signals: acoustic, Electro-Glotto-Graphic, glottal area, and estimation of the glottal flow by inversion of the vocal tract.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2008a.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2008a.pdf}
+}
+
+@article{BellerG2009,
+    author={Gr\'egory Beller and Christophe Veaux and Gilles Degottex and Nicolas Obin and Pierre Lanchantin and Xavier Rodet},
+    title={IrcamCorpusTools : Plateforme Pour Les Corpus de Parole},
+    journal={Traitement Automatique des Langues (TAL)},
+    pages = {77-103},
+    year={2009},
+    volume={49},
+    number={3},
+    abstract={Corpus based methods are increasingly used for speech technology applications and for the development of theoretical or computer models of spoken languages. These usages range from unit selection speech synthesis to statistical modeling of speech phenomena like prosody or expressivity. In all cases, these usages require a wide range of tools for corpus creation, labeling, symbolic and acoustic analysis, storage and query. However, if a variety of tools exists for each of these individual tasks, they are rarely integrated into a single platform made available to a large community of researchers. In this paper, we propose IrcamCorpusTools, an open and easily extensible platform for analysis, query and visualization of speech corpora. It is already used for unit selection speech synthesis, for prosody and expressivity studies, and to exploit various corpora of spoken French or other languages.},
+    url={http://www.atala.org/IMG/pdf/TAL-2008-49-3-03-Beller.pdf},
+    pdf={http://www.atala.org/IMG/pdf/TAL-2008-49-3-03-Beller.pdf}
+}
+
+@inbook{RodetX2009,
+    author={Xavier Rodet and Gr\'egory Beller and Niels Bogaards and Gilles Degottex and Snorre Farner and Pierre Lanchantin and Nicolas Obin and Axel Roebel and Christophe Veaux and Fernando Villavicencio},
+    title={Parole et musique},
+    chapter={Transformation et synth\`ese de la voix parl\'ee et de la voix chant\'ee},
+    publisher={Odile Jacob},
+    year={2009}
+}
+
+
+
+
+@misc{DegottexG2012ahmtalk,
+    author = {G. Degottex},
+    title = {A Full-Band Adaptive Harmonic Representation of Speech},
+    howpublished = {University of Crete, Heraklion, Greece},
+    month = {November},
+    year = {2012},
+    address = {University of Crete, Heraklion, Greece}
+}
+
+@misc{DegottexG2012vomodglmod,
+    author = {G. Degottex},
+    title = {Voice source modeling using a glottal model},
+    howpublished = {University of Crete, Heraklion, Greece},
+    month = {November},
+    year = {2012},
+    address = {University of Crete, Heraklion, Greece},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/DegottexG2012vomodglmod.pdf}
+}
+
+@misc{DegottexG2012encdecmod,
+    author = {G. Degottex},
+    title = {Voice Encoding/Decoding Model for Voice Transformation},
+    howpublished = {UPV/EHU - Aholab, Bilbao, Spain},
+    month = {June},
+    year = {2012},
+    address = {Bilbao, Spain}
+}
+
+@misc{MaestriE2011,
+    author = {E. Maestri and G. Degottex},
+    title = {L'outil {SVLN} dans un cadre de cr\'eation},
+    howpublished = {S\'eminaire Recherche-Technologie, IRCAM, Paris, France},
+    month = {February},
+    year = {2011},
+    address = {Paris, France},
+    abstract = {Dans la composition de Celestografia, la pi\`ece que je suis en train de composer en cursus 2, j'ai abord\'e pas mal des probl\'ematiques li\'ees \`a la synth\`ese, et en particulier \`a celle de la voix. N'\'etant musicalement pas attir\'e par la synth\`ese de la parole, je cherchais un outil adapt\'e \`a la voix chant\'ee. J'ai l'habitude de partir d'un probl\`eme musical et d'aborder des solutions techniques. Le son souhait\'e pour ma partie \'electronique est une continuation du son vocal et une distorsion, s\'emantique, de son identit\'e. Par exemple, pour un son vocal tenu longtemps qui garde son timbre, sa pr\'esence vocale, mais aussi sa chaleur, SVP(Trax), PSOLA et FOF offrent d\'ej\`a des outils. Mais l'outil d\'evelopp\'e par Gilles Degottex (SVLN: Separation of the Vocal-tract with the Liljencrants-fant model plus Noise) durant son doctorat m'a attir\'e pour les raisons ci-dessus, pour la pr\'ecision de la transposition et du time stretching. Bien que cet outil ne poss\`ede pas encore une interface << user-friendly >> (ex. max/msp, IrcamTools), celui-ci va encore se d\'evelopper. Nous souhaitons pr\'esenter les r\'esultats obtenus aux compositeurs et chercheurs, montrer la d\'emarche et le travail musical abord\'e.},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/MaestriE2011.pdf}
+}
+
+@misc{Degottex2008b,
+    author = {G. Degottex and E. Bianco and X. Rodet},
+    title = {Mesure de la source glottique par Vid\'eoendoscopie \`a haute vitesse},
+    howpublished = {S\'eminaire Recherche-Technologie, IRCAM, Paris, France},
+    year = {2008},
+    month = {April},
+    address = {Paris, France}
+}
+
+@mastersthesis{DegottexG2006specfilt,
+    author = {G. Degottex},
+    title = {Spectral filtering and Probabilistic model for Musical signal separation},
+    school = {�cole Polytechnique F\'ed\'erale de Lausanne (EPFL), Lausanne, Switzerland},
+    address = {Lausanne, Switzerland},
+    year = {2006}
+}
+
+@inproceedings{Degottex2010e,
+    author={G. Degottex and A. Roebel and X. Rodet},
+    title={Transformation de la voix \`a l'aide d'un mod\`ele de source glottique},
+    booktitle={Journees Jeunes Chercheurs en Audition, Acoustique musicale et Signal audio (JJCAAS)},
+    year = {2010},
+    address = {Paris, France},
+    month={November},
+    abstract={La transformation de la voix a de nombreuses applications, autant pour des domaines scientifiques comme la synth\`ese d'exprissivit\'e ou la conversion de voix que pour des applications directes comme les technologies de divertissement, les diff\'erentes formes d'art contemporain, les industries de la musique et du cin\'ema, etc. Dans ce poster, nous pr\'esenterons des r\'esultats de transformation de la voix en utilisant une m\'ethode d'analyse/synth\`ese qui met en jeux un mod\`ele glottique, une description analytique de la composante d\'eterministe de la source vocale. A l'aide de tests de pr\'ef\'erences, en comparant cette m\'ethode avec d'autres de l'\'etat de l'art, nous montrerons que la qualit\'e globale de transpositions importantes du pitch peut \^{e}tre am\'elior\'ee en utilisant un tel mod\`ele glottique. Nous verons aussi que cette m\^{e}me m\'ethode permet de modifier la qualit\'e vocale ``breathiness''.},
+    url={http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2010e.pdf},
+    pdf={http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2010e.pdf}
+}
+
+@inproceedings{Degottex2009e,
+    author = {G. Degottex and A. Roebel and X. Rodet},
+    title = {Estimation du filtre du conduit-vocal adapt\'ee \`a un mod\`ele d'excitation mixte pour la transformation et la synth\`ese de la voix},
+    booktitle = {Journees Jeunes Chercheurs en Audition, Acoustique musicale et Signal audio (JJCAAS)},
+    month = {November},
+    year = 2009,
+    address = {Paris, France},
+    abstract = {En transformation et synth\`ese de la voix, le filtre du conduit-vocal est habituellement suppos\'e \^{e}tre excit\'e par un spectre d'amplitude plat. Nous proposons d'utiliser un mod\`ele de source mixte: un mod\`ele de Liljencrants-Fant (LF) et un bruit Gaussien. L'estimation du conduit-vocal doit donc \^{e}tre adapt\'e \`a cette source en prenant en compte les amplitudes du mod\`ele LF dans les basses fr\'equences et le bruit dans les hautes fr\'equences. Le mod\`ele de production vocal r\'esultant peut ensuite \^{e}tre utilis\'e pour contr\^{o}ler ind\'ependamment le conduit-vocal et la source dans le cadre de la transformation de la voix et pour l'apprentissage de ses param\`etres dans la synth\`ese vocale HMM.},
+    url = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2009e.pdf},
+    pdf = {http://gillesdegottex.eu/wp-content/papercite-data/pdf/Degottex2009e.pdf}
+}
+
+@inproceedings{Degottex2009d,
+    author = {G. Degottex and X. Rodet},
+    title = {Evolution de param\`etres de mod\`ele glottique et comparaisons avec signaux physiologiques},
+    booktitle = {Summer school: Sciences et voix approche pluri-disciplinaire de la voix chant\'ee (EESVC)},
+    year = 2009,
+    month = {September},
+    address = {Giens, France}
+}
+
+@inproceedings{Bianco2008,
+    author = {E. Bianco and G. Degottex and X. Rodet},
+    title = {M\'ecanismes vibratoires ou registres ?},
+    booktitle = {Congres de la soci\'et\'e fran\c{c}aise de phoniatrie},
+    year = 2008,
+    month = {October},
+    address = {Paris, France},
+    abstract = {Images "surprenantes" de la vibration des cordes vocales de chanteurs film\'ees \`a raison de 4000 images par seconde par une cam\'era ultra rapide. Il s'agit dans cette pr\'esentation de visualiser, parfois image par image (1/4000 de seconde), les diff\'erents types de mouvements vibratoires. Ces enregistrements ont \'et\'e r\'ealis\'es sur des chanteurs en utilisant la cam\'era coupl\'ee aux diff\'erents signaux vocaux: acoustique, \'electroglottographie, calcul de l'aire glottique et estimation du d\'ebit glottique par inversion des voies phonatoires.}
+}
+
+@inproceedings{Degottex2008,
+    author = {G. Degottex and E. Bianco and X. Rodet},
+    title = {Estimation of glottal area with high-speed videoendoscopy},
+    booktitle = {Speech Production Workshop: Instrumentation-based approach},
+    year = 2008,
+    address = {ParisIII/ILPGA, Paris, France},
+    month = {July},
+    abstract = {For the analysis and the transformation of speech signals, we develop a new method to estimate the glottal flow by inversion of the vocal tract. However, no measure of this flow exist in vivo presently. It is thus very difficult to validate a such estimation. Thanks to high-speed videoendoscopy, we can estimate the glottal area. It allows us to compute a theoretical glottal flow by the use of a physical model (eg. S.Maeda). The glottal flow estimated by the inversion of the vocal tract and the flow obtained by the glottal area can be finaly compared. Therefore, we made a method of automatic measure of the glottal area on the videoendoscopic images. The vocal folds are filmed through a rigid endoscope which passes through the mouth, connected to a high-speed camera ENDOCAM 5562 which provides 4000 color images a second in 256x256 pixels. The glottal area is estimated by a thresholding method of the luminance of the videoendoscopic images. The threshold is automatically computed by localising the edges of the vocal folds. We will describe the method of glottal area estimation and finish by a comparison of the various speech signals: acoustic, Electro-Glotto-Graphic, glottal area and glottal flows.}
+}

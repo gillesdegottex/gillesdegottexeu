@@ -1,0 +1,121 @@
+/* Custom styles for Gilles Degottex's Academic Website */
+
+/* Hide the secondary sidebar (TOC is now in the primary sidebar) */
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 3px solid var(--md-default-fg-color--light);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2.6rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--md-primary-fg-color);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: var(--md-primary-fg-color);
+    margin-bottom: 0.25rem;
+}
+
+.timeline-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Publication styling */
+.publication {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 3px solid var(--md-default-fg-color--light);
+    background: var(--md-code-bg-color);
+}
+
+.publication-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+    color: var(--md-default-fg-color--light);
+    font-style: italic;
+}
+
+.publication-venue {
+    font-weight: 500;
+}
+
+.publication-links a {
+    margin-right: 1rem;
+}
+
+/* Tool card styling */
+.tool-card {
+    background: var(--md-code-bg-color);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.tool-card h3 {
+    color: var(--md-primary-fg-color);
+    margin-top: 0;
+}
+
+/* Contact info styling */
+.contact-info {
+    background: var(--md-code-bg-color);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+/* Badge styling */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.badge-primary {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+.badge-secondary {
+    background: var(--md-default-fg-color--light);
+    color: var(--md-default-bg-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .timeline-item::before {
+        left: -2.1rem;
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+}
