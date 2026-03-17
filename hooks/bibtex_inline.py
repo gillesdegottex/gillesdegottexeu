@@ -115,16 +115,11 @@ def _format_inline_entry(key, entry):
 
     links_html = ""
     if links:
-        links_html = (
-            '<div class="publication-links">'
-            + " ".join(links)
-            + "</div>"
-        )
+        links_html = " " + " ".join(links)
 
     return (
         f'<div class="publication">\n'
-        f"  <p>{body}</p>\n"
-        f"  {links_html}\n"
+        f"  <p>{body}{links_html}</p>\n"
         f"</div>\n"
     )
 

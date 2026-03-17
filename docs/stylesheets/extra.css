@@ -37,10 +37,16 @@
 
 /* Publication styling */
 .publication {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    border-left: 3px solid var(--md-default-fg-color--light);
-    background: var(--md-code-bg-color);
+    margin-bottom: 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.publication::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--md-default-fg-color--light);
 }
 
 .publication-title {
