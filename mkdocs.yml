@@ -7,7 +7,7 @@ site_author: Gilles Degottex
 site_url: https://gillesdegottex.eu/
 
 # Copyright
-copyright: "© 2024 Gilles Degottex"
+copyright: "© 2026 Gilles Degottex"
 
 # Theme configuration
 theme:
@@ -61,7 +61,6 @@ hooks:
 
 # Customization
 extra:
-  homepage: research
   social:
     - icon: fontawesome/brands/orcid
       link: https://orcid.org/0000-0002-1833-787X
@@ -74,11 +73,11 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/degottex/
     - icon: fontawesome/solid/envelope
-      link: mailto:gilles.degottex@gmail.com
+      link: mailto:gdegottex@gmail.com
 
 # Extra CSS
 extra_css:
-  - docs/stylesheets/extra.css
+  - stylesheets/extra.css
 
 # Navigation
 nav:

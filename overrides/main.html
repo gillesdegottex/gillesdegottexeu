@@ -24,7 +24,7 @@
     }
 
     .md-header__social a {
-        color: var(--md-default-fg-color);
+        color: white;
         opacity: 0.7;
         transition: opacity 0.2s;
     }
@@ -36,11 +36,16 @@
     .md-header__social i {
         font-size: 1.2rem;
     }
+
+    .md-header__social .md-icon svg {
+        fill: currentColor;
+    }
+
 </style>
 {% endblock %}
 
 {% block header %}
-<header class="md-header" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
     <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
         <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}"
             class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
@@ -125,5 +130,10 @@
         </div>
         {% endif %}
     </nav>
+    {% if "navigation.tabs.sticky" in config.theme.features %}
+      {% if "navigation.tabs" in config.theme.features %}
+        {% include "partials/tabs.html" %}
+      {% endif %}
+    {% endif %}
 </header>
 {% endblock %}
