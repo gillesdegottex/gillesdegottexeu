@@ -1,10 +1,5 @@
 /* Custom styles for Gilles Degottex's Academic Website */
 
-/* Hide the secondary sidebar (TOC is now in the primary sidebar) */
-.md-sidebar--secondary {
-    display: none !important;
-}
-
 /* Timeline styling */
 .timeline {
     position: relative;

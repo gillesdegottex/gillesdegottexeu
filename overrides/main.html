@@ -1,59 +1,129 @@
 {% extends "base.html" %}
 
-{% block nav %}
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-    <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner">
-            <nav class="md-nav md-nav--primary" aria-label="{{ lang.t('navigation') }}" data-md-level="0">
-                <label class="md-nav__title" for="__drawer">
-                    <a href="{{ config.extra.homepage | d(nav[0].url, true) }}" title="{{ config.site_name }}"
-                        class="md-nav__button md-logo" data-md-component="logo" data-md-state="scroll">
-                        {% include "partials/logo.html" %}
-                    </a>
-                    {{ config.site_name }}
-                </label>
-                <ul class="md-nav__list" data-md-scrollfix>
-                    {% for nav_item in nav %}
-                    {% include "partials/nav-item.html" %}
-                    {% endfor %}
+{% block extrahead %}
+{{ super() }}
+<!-- Include FontAwesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .md-header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-                    <!-- Table of Contents in the primary sidebar -->
-                    {% if page.toc %}
-                    <li class="md-nav__item">
-                        <nav class="md-nav" data-md-component="toc" data-md-level="1">
-                            <label class="md-nav__title" for="__toc">
-                                <span class="md-nav__icon md-icon"></span>
-                                {{ config.theme.toc.title or "Table of contents" }}
-                            </label>
-                            <ul class="md-nav__list" data-md-scrollfix>
-                                {% for toc_item in page.toc %}
-                                <li class="md-nav__item">
-                                    <a href="{{ toc_item.url }}" class="md-nav__link">
-                                        {{ toc_item.title }}
-                                    </a>
-                                    {% if toc_item.children %}
-                                    <ul class="md-nav__list" data-md-scrollfix>
-                                        {% for toc_item_child in toc_item.children %}
-                                        <li class="md-nav__item">
-                                            <a href="{{ toc_item_child.url }}" class="md-nav__link">
-                                                {{ toc_item_child.title }}
-                                            </a>
-                                        </li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </nav>
-                    </li>
-                    {% endif %}
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
+    .md-header__title {
+        flex: 1;
+    }
+
+    .md-header__social {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .md-header__social a {
+        color: var(--md-default-fg-color);
+        opacity: 0.7;
+        transition: opacity 0.2s;
+    }
+
+    .md-header__social a:hover {
+        opacity: 1;
+    }
+
+    .md-header__social i {
+        font-size: 1.2rem;
+    }
+</style>
 {% endblock %}
 
-{% block sidebar %}
+{% block header %}
+<header class="md-header" data-md-component="header">
+    <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+        <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}"
+            class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+            {% include "partials/logo.html" %}
+        </a>
+        <label class="md-header__button md-icon" for="__drawer">
+            {% set icon = config.theme.icon.menu or "material/menu" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        <div class="md-header__title" data-md-component="header-title">
+            <div class="md-header__ellipsis">
+                <div class="md-header__topic">
+                    <span class="md-ellipsis">
+                        {{ config.site_name }}
+                    </span>
+                </div>
+                <div class="md-header__topic" data-md-component="header-topic">
+                    <span class="md-ellipsis">
+                        {% if page %}
+                        {{ page.title }}
+                        {% else %}
+                        {{ config.site_name }}
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Social icons in header -->
+        <div class="md-header__social">
+            {% for social in config.extra.social %}
+            <a href="{{ social.link }}" title="{{ social.name }}" target="_blank" rel="noopener">
+                {% if social.icon.startswith("fontawesome/") %}
+                {% set icon_parts = social.icon.split("/") %}
+                <i class="fa-{{ icon_parts[1] }} fa-{{ icon_parts[2] if icon_parts|length > 2 else '' }}"></i>
+                {% else %}
+                {% include ".icons/" ~ social.icon ~ ".svg" %}
+                {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+        {% if "material/search" in config.extra.javascript %}
+        <label class="md-header__button md-icon" for="__search">
+            {% set icon = config.theme.icon.search or "material/magnify" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+            <label class="md-search__overlay" for="__search"></label>
+            <div class="md-search__inner" role="search">
+                <form class="md-search__form" name="search">
+                    <input type="text" class="md-search__input" name="query" aria-label="{{ lang.t('search') }}"
+                        placeholder="{{ lang.t('search') }}" autocapitalize="off" autocorrect="off" autocomplete="off"
+                        spellcheck="false" data-md-component="search-query" required />
+                    <label class="md-search__icon md-icon" for="__search">
+                        {% set icon = config.theme.icon.search or "material/magnify" %}
+                        {% include ".icons/" ~ icon ~ ".svg" %}
+                        <span class="md-search__icon md-icon">
+                            {% set icon = config.theme.icon.close or "material/close" %}
+                            {% include ".icons/" ~ icon ~ ".svg" %}
+                        </span>
+                    </label>
+                    <button type="reset" class="md-search__icon md-icon" title="{{ lang.t('search.reset') }}">
+                        {% set icon = config.theme.icon.close or "material/close" %}
+                        {% include ".icons/" ~ icon ~ ".svg" %}
+                    </button>
+                </form>
+                <div class="md-search__output">
+                    <div class="md-search__scrollwrap" data-md-scrollfix>
+                        <div class="md-search-result" data-md-component="search-result">
+                            <div class="md-search-result__meta">
+                                {{ lang.t("search.result.initial") }}
+                            </div>
+                            <ol class="md-search-result__list"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% if config.repo_url %}
+        <div class="md-header__source">
+            {% include "partials/source.html" %}
+        </div>
+        {% endif %}
+    </nav>
+</header>
 {% endblock %}

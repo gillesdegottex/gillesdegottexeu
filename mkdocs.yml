@@ -61,6 +61,7 @@ hooks:
 
 # Customization
 extra:
+  homepage: research
   social:
     - icon: fontawesome/brands/orcid
       link: https://orcid.org/0000-0002-1833-787X
@@ -70,16 +71,14 @@ extra:
       link: https://github.com/gillesdegottex
     - icon: fontawesome/brands/gitlab
       link: https://gitlab.com/gillesdegottex
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/gdegottex
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/gillesdegottex
+      link: https://www.linkedin.com/in/degottex/
     - icon: fontawesome/solid/envelope
-      link: mailto:gdegottex@gmail.com
+      link: mailto:gilles.degottex@gmail.com
 
 # Extra CSS
 extra_css:
-  - stylesheets/extra.css
+  - docs/stylesheets/extra.css
 
 # Navigation
 nav:
