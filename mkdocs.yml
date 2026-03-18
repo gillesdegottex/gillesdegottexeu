@@ -1,7 +1,7 @@
 # MkDocs Configuration for Gilles Degottex's Academic Website
 # Using Material Theme for modern, responsive design
 
-site_name: G. Degottex's Homepage
+site_name: Gilles Degottex
 site_description: Research portfolio of Gilles Degottex - Speech Processing, Voice Synthesis, Audio Signal Processing
 site_author: Gilles Degottex
 site_url: https://gillesdegottex.eu/
@@ -62,6 +62,19 @@ hooks:
 # Customization
 extra:
   homepage: research/
+  social:
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0002-1833-787X
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.com/citations?user=example
+    - icon: fontawesome/brands/github
+      link: https://github.com/gillesdegottex
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/gillesdegottex
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/degottex/
+    - icon: fontawesome/solid/envelope
+      link: mailto:gdegottex@gmail.com
 
 # Extra CSS
 extra_css:
